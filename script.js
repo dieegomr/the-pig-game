@@ -69,7 +69,7 @@ document.querySelector('.btn--hold').addEventListener('click', function () {
       generalScoreP0 += currentScoreP0;
       generalScore0El.textContent = generalScoreP0;
       // current score > 100 ?
-      if (generalScoreP0 >= 20) {
+      if (generalScoreP0 >= 100) {
         player0El.classList.add('player--winner');
         document.querySelector('.dice').classList.add('hidden');
       } else {
@@ -82,7 +82,7 @@ document.querySelector('.btn--hold').addEventListener('click', function () {
       generalScoreP1 += currentScoreP1;
       generalScore1El.textContent = generalScoreP1;
       // current score > 100 ?
-      if (generalScoreP1 >= 20) {
+      if (generalScoreP1 >= 100) {
         player1El.classList.add('player--winner');
         document.querySelector('.dice').classList.add('hidden');
       } else {
