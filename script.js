@@ -11,6 +11,7 @@ let currentScoreP0 = 0;
 let currentScoreP1 = 0;
 let generalScoreP0 = 0;
 let generalScoreP1 = 0;
+document.querySelector('.dice').classList.add('hidden');
 
 generalScore0El.textContent = generalScoreP0;
 generalScore1El.textContent = generalScoreP1;
@@ -29,6 +30,7 @@ document.querySelector('.btn--roll').addEventListener('click', function () {
     console.log('Does not work');
   } else {
     let diceNumber = Number(Math.trunc(Math.random() * 6 + 1));
+    document.querySelector('.dice').classList.remove('hidden');
     document.querySelector('.dice').src = `dice-${diceNumber}.png`;
     // If 1
     if (diceNumber === 1) {
@@ -69,7 +71,7 @@ document.querySelector('.btn--hold').addEventListener('click', function () {
       // current score > 100 ?
       if (generalScoreP0 >= 20) {
         player0El.classList.add('player--winner');
-        document.querySelector('.dice').classList.remove('dice');
+        document.querySelector('.dice').classList.add('hidden');
       } else {
         changePlayers();
         currentScoreP0 = 0;
@@ -82,7 +84,7 @@ document.querySelector('.btn--hold').addEventListener('click', function () {
       // current score > 100 ?
       if (generalScoreP1 >= 20) {
         player1El.classList.add('player--winner');
-        document.querySelector('.dice').classList.remove('dice');
+        document.querySelector('.dice').classList.add('hidden');
       } else {
         changePlayers();
         currentScoreP1 = 0;
@@ -90,4 +92,21 @@ document.querySelector('.btn--hold').addEventListener('click', function () {
       }
     }
   }
+});
+
+// New Game button
+
+document.querySelector('.btn--new').addEventListener('click', function () {
+  currentScoreP0 = 0;
+  currentScoreP1 = 0;
+  generalScoreP0 = 0;
+  generalScoreP1 = 0;
+  generalScore0El.textContent = generalScoreP0;
+  currentScoreP0El.textContent = currentScoreP0;
+  generalScore1El.textContent = generalScoreP1;
+  currentScoreP1El.textContent = currentScoreP1;
+  player1El.classList.contains('player--active') && changePlayers();
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
+  document.querySelector('.dice').classList.add('hidden');
 });
