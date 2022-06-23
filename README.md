@@ -1,6 +1,6 @@
 <h1>The pig game 🎲</h1>
 
-<p><a href="https://github.com/dieegomr/Gess-my-number-game/blob/main/README_pt-BR.md">README.md</a> em português</p>
+<p><a href="https://github.com/dieegomr/the-pig-game/blob/main/README_pt-BR.md">README.md</a> em português</p>
 <p>
 This is a simple project part of <a href="https://www.udemy.com/course/the-complete-javascript-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=WebDevelopment_v.PROF_la.EN_cc.BR_ti.8322&utm_content=deal4584&utm_term=_._ag_108455848694_._ad_467154447027_._kw__._de_c_._dm__._pl__._ti_dsa-774930035449_._li_1031586_._pd__._&matchtype=&gclid=CjwKCAjw14uVBhBEEiwAaufYx9TbRKLGzNDmGQA8PAaGk99qGom4VgQpkeWedZuxHN_Cs1e6m0LX0BoCUJQQAvD_BwE">"The complete JavaScript Course 2022: From Zero to Expert"</a> where the idea was to keep practicing DOM manipulation, but a litlle bit more complex then on <a href="https://github.com/dieegomr/Gess-my-number-game">"Guess my number - Game"</a>
 </p>
